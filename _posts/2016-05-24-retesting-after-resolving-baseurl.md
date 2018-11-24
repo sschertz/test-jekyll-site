@@ -1,8 +1,8 @@
 ---
-layout: post
 title:  "Retesting after Resolving Baseurl"
 date:   2016-05-24 19:42:14
-categories: jekyll update
+categories: jekyll 
+tags: [troubleshooting, problems]
 ---
 
 Had considerable issues getting the site to render correctly in GitHub Pages. After much hunting around, discovered the issue was with the `baseurl` option in the `_config.yml` file. It needed to be set to the name of my project repository I'm using for the site (`test-jekyll-site`):

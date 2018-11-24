@@ -11,11 +11,62 @@ email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Just a test site to use as a sandbox and play around with learning Jekyll.
 baseurl: "/test-jekyll-site" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: http://sschertz.github.io # the base hostname & protocol for your site
+twitter_username: saraschertz
+github_username:  sschertz
+repository: "sschertz/test-jekyll-site"
 
 # Build settings
 markdown: kramdown
 
-theme: jekyll-theme-architect
+# Theme settings
+
+author:
+  name     : "Sara Schertz"
+  avatar   : "/assets/images/bio-photo.jpg"
+  bio      : "My awesome biography constrained to a sentence or two goes here."
+  location : "Seattle Area, Washington, USA" 
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/saraschertz"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/sschertz"
+
+locale: "en"
+
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "dirt"
+
+include: ["_pages"]
+
+paginate: 5 # amount of posts to show
+paginate_path: /blog/page:num/
+
+plugins:
+  - jekyll-include-cache
+
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      header:
+          overlay_color: "#e9dcbf"
+          show_overlay_excerpt: true
+
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
