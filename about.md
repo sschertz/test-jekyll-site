@@ -8,7 +8,7 @@ This is the base Jekyll theme. You can find out more info about customizing your
 
 This is a test edit from working copy on the iPad.
 
-This is a test edit from iAWriter on the mac.
+And another test...editing the source in Drafts on the iPad.
 
 You can find the source code for the Jekyll new theme at:
 {% include icon-github.html username="jglovier" %} /
